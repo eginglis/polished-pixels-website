@@ -1,0 +1,100 @@
+/* -------------------------------------------
+
+	Name: 		Polished Pixels (print)
+	Date:		2016/10/07 
+	Author:		http://psdhtml.me
+		   		   
+---------------------------------------------  */
+* { margin: 0; padding: 0; }
+@page { margin: .5cm; }
+
+html { font-size: 100.01%; }
+body { background: #fff; font-size: 60%; }
+
+body, textarea, input, select, option, button { color: #000; font-family: Calibri, Helvetica, Arial, sans-serif; line-height: 1.4; }
+li, dt, dd, p, figure, th, td, caption, pre, legend { font-size: 15px; } /*---*/
+ul, ol, dl, p, figure, table, pre, h1, h2, h3, h4, h5, h6, legend { margin-bottom: 1em; }
+
+article, aside, div, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; margin-bottom: 2em; }
+	
+	
+/*! Layout --------- */
+#top { margin: 0 0 1em; padding: 0 0 0.5em; border-bottom: 1px solid #ccc; }
+	#logo a { color: #000; text-decoration: none; }
+#content { }
+#footer { margin: 1em 0 0; padding: 1em 0 0; border-top: 1px solid #ccc; }
+
+
+/*! Columns --------- */
+
+
+/*! Modules --------- */
+.accordion-a { }
+	.accordion-a div { display: block !important; }
+.gallery-a, .gallery-a ul, .slider-b, #logos, .list-o, .list-e { list-style: none; height: auto !important; padding: 0; }	
+	.gallery-a *, .gallery-a li, .slider-b div, .slider-b li, #logos div, #logos li, .list-o li, .list-e div, .list-e li { position: relative !important; left: 0 !important; top: 0 !important; float: none !important; width: auto !important; max-width: none !important; height: auto !important; margin-right: 0 !important; }
+	.slider-b a { display: block; background-position: -3000em -3000em; background-repeat: no-repeat; }
+	.slider-b .item a > span { display: block; margin-top: .25em; }
+.gallery-c { overflow: hidden; margin-left: -20px; }
+	.gallery-c li { float: left; width: 50%; border-left: 20px solid #fff; }
+	.gallery-a.c ul li a { display: block; }
+header { }
+	header + .gallery-a-wrapper, headeR + .list-i { margin-top: -1em; }
+	header h1 + p, header h2 + p, header h3 + p, header h4 + p, header h5 + p, header h6 + p { margin-top: -.5em; }		
+.list-e, .list-k, .list-i, .gallery-c, .list-comments, .list-comments ul, .list-h { list-style: none; padding: 0; }
+	.list-e li, .list-k li, .list-i li, .list-comments li, .list-h li { height: auto !important; font-size: 1em; }
+	.list-e li li, .list-k li li, .list-h li li { font-size: 15px; }
+	.list-k h1, .list-k h2, .list-k h3, .list-k h4, .list-k h5, .list-k h6, .gallery-a header, .blog-post header, .news-a header, .blog-post header p, .news-a header p, .gallery-a li li { margin-bottom: 0; }
+	.list-i figure { margin-bottom: 1em; }
+	.list-i li, .gallery-a li { margin-bottom: 3em; }
+	.blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6, .news-a h1, .news-a h2, .news-a h3, .news-a h4, .news-a h5, .news-a h6 { margin-top: 0; }
+.list-b { }	
+	.list-b li { padding-left: 0 !important; }
+.list-c { font-weight: 700; }
+	.list-c span { font-weight: 400; }
+	.list-c span:before { content: "> "; }
+.list-e { }
+	.list-e li { font-size: 15px; }
+	.list-e q { display: block; font-style: italic; }
+	.list-e.a h1, .list-e.a h2, .list-e.a h3, .list-e.a h4, .list-e.a h5, .list-e.a h6 { margin: 0; font-size: 18px; }
+.list-i { }
+	.list-i .inner { padding-top: 0 !important; }
+.map { }
+	.map .size-a { display: block; font-size: .8em; }
+.quote-a { }
+	.quote-a q { display: block; margin-bottom: .5em; font-style: italic; }
+.vcard { }
+	.vcard ul { list-style: none; padding: 0; }
+
+
+/*! Defaults --------- */
+h1, h2, h3, h4, h5, h6, #logo { margin: 1.25em 0 0.5em; color: #000; font-weight: 700; font-family: Cambria, Georgia, serif; }
+h2, h3 { page-break-after: avoid; }
+	h1, #logo { margin-top: 0; font-size: 24px; }
+	h2 { font-size: 20px; }
+	h3 { font-size: 18px; }
+	h4 { font-size: 16px; }
+	h5 { font-size: 15px; text-transform: uppercase; }
+	h6 { font-size: 14px; text-transform: uppercase; }
+	h1 + h2 { margin-top: 0; }
+p, h2, h3 { orphans: 3; widows: 3; }
+
+.overlay-d { color: #ccc; }
+.strong, #footer .vcard ul li > span:first-child, .list-b li > span:first-child { font-weight: 700; }
+
+a { color: #09f; text-decoration: underline; }
+
+img { max-width: 100% !important; height: auto !important; border-width: 0; image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; }
+tr, img { page-break-inside: avoid; }
+
+ul, ol, dd, blockquote { padding-left: 2em; }
+	ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
+
+table { display: table; border-collapse: collapse; border-spacing: 0; }
+	table th, table td { padding: 0.3em 0.6em; border: 1px solid #ccc; }
+
+
+/*! Hiding --------- */
+h1 br, h2 br, h3 br, h4 br, h5 br, h6 br, br { display: none; }
+#skip, nav, form, [class*="link"], [class*="icon"], .totop, .map figure, .quote-a img, .tabs-a > ul, .map a[rel="external"], .list-k.first, .heading-a figure, .list-e figure, .map.a, .module-a > figure, .list-comments figure, .blog-post h3 a, .list-d .img, .cols-a.a > aside, .news-a header figure, .filtering-by, #featured figure, figure.desktop-hide, .list-c img, .gallery-b, .list-o figure, .list-e img, .list-e a, .list-e.mobile-only, .profile img.mobile-only, .list-e.a.c, .list-i figure { position: absolute; left: -3000em; top: -3000em; }
+.bx-controls, #root .bx-clone, #root .list-e .bx-clone, .bx-prev, .bx-next, .gallery-a .link-a, .social-a, #social, .zls-large, .zls-btnmn, .zls-btrht, .gallery-a li figure, .custom-pager, #logos { position: absolute !important; left: -3000em !important; top: -3000em !important; }
