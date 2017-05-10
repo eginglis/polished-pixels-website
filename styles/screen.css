@@ -1509,7 +1509,7 @@ form { }
 	.form-a p { margin-bottom: 30px; }
 	.form-a label { text-align: left; text-transform: lowercase; }
 	.form-a input, .form-a select, .form-a textarea { display: block; width: 100%; border-color: #e3e7ec; color: #b7b7b7; font-weight: 600; font-size: 15px; font-style: italic; }
-	.form-a button { display: inline-block; float: none; margin: 2px 0 0; }
+	.form-a button, .form-a input[type=submit] { display: inline-block; float: none; margin: 2px 0 0; }
 	.form-a figure { z-index: 1 !important; border-radius: 16px; }
 	header + .form-a { margin-top: -35px; }
 	.form-a .check-a { }
