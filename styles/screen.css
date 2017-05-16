@@ -1046,7 +1046,7 @@ ul { list-style: none; padding: 0 0 0 /*8px*/; }
 	ul li { position: relative; padding-left: 12px; }
 	ul li:after { content: ""; display: block; overflow: hidden; position: absolute; left: 0; top: 11px; width: 4px; height: 4px; background: #304f63; }
 	ul.size-a li:after { top: 8px; width: 3px; height: 3px; }
-#nav > ul > li:after, #footer li:after, .tabs-a > ul li:after, .gallery-a li:after, .list-a li:after, .list-b li:after, .list-c li:after, .list-d li:after, .plain li:after, .testimonials li:after, #nav > ul > li > ul li:after, .form-filter li:after, .list-e > li:after, .list-f li:after, .gallery-b li:after, .list-h > li:after, .gallery-c li:after, .list-i > li:after, .list-e .item > li:after, .list-j li:after, .checklist-a li:after, .checklist-b li:after, .list-total li:after, #social li:after, .list-tags li:after, .list-comments li:after, .pagination-a li:after, .list-k li:after, #logos li:after, .list-l li:after, .list-m li:after, .list-n li:after, .list-o li:after, .list-icons li:after, .slider-b li:after, .semantic-select ul li:after, .tabs-b > ul li:after { left: -3000em; }
+#nav > ul > li:after, #footer li:after, .tabs-a > ul li:after, .gallery-a li:after, .list-a li:after, .list-b li:after, .list-c li:after, .list-d li:after, .plain li:after, .testimonials li:after, #nav > ul > li > ul li:after, .form-filter li:after, .list-e > li:after, .list-f li:after, .gallery-b li:after, .list-h > li:after, .gallery-c li:after, .list-i > li:after, .list-e .item > li:after, .list-j li:after, .checklist-a li:after, .checklist-b li:after, .list-total li:after, #social li:after, .list-tags li:after, .list-comments li:after, .pagination-a li:after, .list-k li:after, #logos li:after, .list-l li:after, .list-m li:after, .list-n li:after, .list-o li:after, .list-p li:after, .list-icons li:after, .slider-b li:after, .semantic-select ul li:after, .tabs-b > ul li:after { left: -3000em; }
 	
 .list-a { list-style: none; margin-top: 55px; margin-left: -35px; padding: 0; color: #6492af; line-height: 1.02222222222; text-align: center; }
 	.list-a li { float: left; width: 33.33333333333%; margin: 0; padding: 0; font-size: 2.25em; }
@@ -1314,6 +1314,15 @@ ul { list-style: none; padding: 0 0 0 /*8px*/; }
 	.list-o figure { overflow: hidden; position: absolute; right: 0; top: 6px; box-shadow: 0 0 49px rgba(203,203,203,.5); border-radius: 10px; background: #fff; }
 	.list-o p { font-size: 1.8em; }
 	.cols-a .list-o:first-child { margin-top: -32px; }
+
+.list-p { list-style: none; padding: 0; color: #5d5d5d; line-height: 1.25; }
+    .list-p li { position: relative; min-height: 150px; margin: 0 0 10px; padding: 0 225px 0 0; font-size: 1em; }
+    .list-p h1, .list-p h2, .list-p h3, .list-p h5, .list-p h4, .list-p h6 { position: relative; margin: 0 0 17px; padding: 0 0 16px; color: #3c5a80; font-weight: 600; font-size: 3.6em; }
+        .list-p h1 a, .list-p h2 a, .list-p h3 a, .list-p h5 a, .list-p h4 a, .list-p h6 a { color: #3c5a80; font-weight: 600; text-decoration: none; }
+        .list-p h1:before, .list-p h2:before, .list-p h3:before, .list-p h5:before, .list-p h4:before, .list-p h6:before { content: ""; display: block; position: absolute; left: 0; bottom: 0; width: 30px; height: 1px; background: #acacac; }
+    .list-p figure { overflow: hidden; position: absolute; right: 0; top: 6px; box-shadow: 0 0 49px rgba(203,203,203,.5); border-radius: 10px; background: #fff; }
+    .list-p p { font-size: 1.8em; }
+    .cols-a .list-p:first-child { margin-top: -32px; }
 	
 .list-comments, .blog-post .list-comments { list-style: none; margin: 25px 0; padding: 0; color: #5d5d5d; line-height: 1.21875; }
 	.list-comments li, .blog-post .list-comments li { margin: 0; padding: 0; font-size: 1em; }
