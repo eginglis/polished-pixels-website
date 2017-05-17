@@ -1747,9 +1747,9 @@ svg:not(:root) { overflow: hidden; }
 /* Responsive --------- */
 @media only screen and (max-width: 100em) { /* 1600 */
 .module-a { }
-	#root .module-a > .fit { width: 150px !important; }
-		#root .module-a > .fit.a { left: 0; }
-		#root .module-a > .fit.b { right: 0; }
+	#root .module-a > .fit { width: 150px !important; box-shadow: 0 0 150px rgba(0,0,0,1), 0 0 150px rgba(0,0,0,.75); }
+		#root .module-a > .fit.a { left: -150px; }
+		#root .module-a > .fit.b { right: -150px; }
 	#root .module-a > .prev, #root .module-a > .next { width: 80px; }
 		#root .module-a > .prev a:before, #root .module-a > .next a:before { width: 100%; font-size: 45px; text-align: center; }
 		#root .module-a > .prev a:before { left: 0; }
@@ -1952,7 +1952,9 @@ header.text-center.mb-g h1, header.text-center.mb-g h2 { max-width: 800px; margi
 .map { padding-right: 583px; padding-left: 50px; }
 	.map figure { width: 593px; }
 .module-a { padding-top: 45px; padding-bottom: 45px; }
-	#root .module-a > .fit { width: 100px; }
+	#root .module-a > .fit { width: 100px !important; box-shadow: 0 0 100px rgba(0,0,0,1), 0 0 100px rgba(0,0,0,.75); }
+		#root .module-a > .fit.a { left: -100px; }
+		#root .module-a > .fit.b { right: -100px; }
 	#root .module-a > .prev, #root .module-a > .next { width: 50px !important; }
 	.module-a > header:first-child { padding-top: 20px; }
 .module-a.va { padding-top: 90px; padding-bottom: 50px; }
@@ -2380,7 +2382,9 @@ hr, .hr { margin: 40px 0; }
 	.module-a > header:first-child { padding-top: 0; }
 	#root .module-a > .prev, #root .module-a > .next { width: 80px; }
 		#root .module-a > .prev a:before, #root .module-a > .next a:before { font-size: 40px; }
-	#root .module-a > .fit { width: 172px; }
+	#root .module-a > .fit { width: 172px !important; box-shadow: 0 0 172px rgba(0,0,0,1), 0 0 172px rgba(0,0,0,.75); }
+		#root .module-a > .fit.a { left: -172px; }
+		#root .module-a > .fit.b { right: -172px; }
 	.module-a + .module-a, .module-a + .quote-a, .quote-a + .module-a, .quote-a + .quote-a, .module-b + .module-a, .module-b + .module-b, .module-b + .quote-a, .quote-a + .module-b, .module-a + .module-b, .module-a + .desktop-hide + .module-a { margin-top: -50px; }
 	.module-a + .desktop-hide + .module-a { margin-top: 0; }
 	.module-a .form-a { margin-bottom: 12px; }
