@@ -500,7 +500,7 @@ header { margin: 0 0 92px; }
 	.heading-a.a p.text-left { max-width: 940px; }
 	.heading-a > div { position: relative; z-index: 3; padding: 74px 0 0; }
 		.heading-a > div > div { float: right; width: 620px; padding: 72px 0 0; }
-		.heading-a > div > figure { float: left; width: 433px; font-size: 1.4em; text-align: center; }
+		.heading-a > div > figure { float: left; width: 433px; margin: 0; font-size: 1.4em; text-align: center; }
 		.heading-a > div > figure img { display: block; margin: 0 auto 0; }
 			.heading-a > div > figure a { display: inline-block; min-width: 188px; padding: 7px 15px; border: 2px solid #ff6000; background: #ff6000; color: #fff; font-weight: 400; line-height: 1.2; text-decoration: none; }
 	.heading-a > figure { overflow: hidden; position: absolute; left: 0; top: 0; right: 0; bottom: 0; z-index: 2; width: auto; margin: 0; background-position: center center; background-repeat: no-repeat; background-size: cover; opacity: .05; }
