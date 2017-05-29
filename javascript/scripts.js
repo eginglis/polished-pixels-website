@@ -135,6 +135,7 @@ head.ready(function() {
 		form_a = $('.form-a')
 		form_filter = $('.form-filter'),
 		gallery_a = $('.gallery-a'),
+		gallery_b = $('.gallery-b'),
 		image_a = $('.image-a'),
 		list_e = $('.list-e'),
 		list_eb = $('.list-e.b'),
@@ -207,6 +208,7 @@ head.ready(function() {
 					list_f.children('li:not(:first-child)').each(function(){ $(this).css('margin-top',-$(this).outerHeight()*.3); });
 				}).register('screen and (min-width: 601px)',function(){ 
 					checklist_a.find('label, a').removeAttr('style');
+					gallery_b.removeAttr('style');
 				}).register('screen and (max-width: 600px)',function(){ 
 					checklist_a.each(function(){
 						if($(this).is(':not(.a,.b)')){
@@ -218,7 +220,26 @@ head.ready(function() {
 							});
 						};
 					});
-					
+					gallery_b.each(function(){
+						if($(this).is('.b-ac')){
+							$(this).css('height',$(this).find('li.b').outerHeight());	
+						} else if($(this).is('.c-ac')){
+							$(this).css('height',$(this).find('li.c').outerHeight());								
+						} else {
+							$(this).css('height',$(this).find('li.a').outerHeight());	
+						};
+					});
+					$(window).on('resize',function(){
+						gallery_b.each(function(){
+							if($(this).is('.b-ac')){
+								$(this).css('height',$(this).find('li.b').outerHeight());	
+							} else if($(this).is('.c-ac')){
+								$(this).css('height',$(this).find('li.c').outerHeight());								
+							} else {
+								$(this).css('height',$(this).find('li.a').outerHeight());	
+							};
+						});
+					});
 				});	
 				if($.browser.mobile){
 					$('select').wrap('<span class="select"></span>');		
@@ -648,12 +669,16 @@ head.ready(function() {
 				form_filter.children('div').find(':header').on('click',function(){ $(this).toggleClass('toggle').next().toggleClass('toggle'); return false });
 				list_f.find('.fit').prev().addClass('last-child');
 				$('#about').removeAttr('id').before('<div id="about" class="about-placeholder hidden"></div>');
-				$('.gallery-b[data-title]').each(function(){ $(this).find('li').prepend('<span class="title">'+$(this).attr('data-title')+'</span>'); });
+				gallery_b.each(function(){
+					if($(this).is('[data-title]')){
+						$(this).find('li').prepend('<span class="title">'+$(this).attr('data-title')+'</span>');
+					};
+				});
 				module_a.find('.double.b.bd-b > * > :header:first-child').each(function(){ $(this).addClass('wide-only').clone().removeClass('wide-only').addClass('wide-hide').prependTo($(this).parents('.module-a')); });
 				module_a.children('.list-e:not(.a)').wrap('<div class="list-e-wrapper"></div>');
 				checklist_a.find('a, label').children('.inner').each(function(){ if($(this).outerHeight()>20){ $(this).parent().addClass('br'); }; });
 				calculator.find('ol').each(function(){ tn=1; $(this).children('li').each(function(){ $(this).prepend('<span class="no">'+tn+'</span> '); tn++; });});
-				$('.gallery-b').prev(':header').each(function(){ $(this).next().after('<p class="size-g text-center desktop-hide semi">'+$(this).text()+'</p>'); });
+				gallery_b.prev(':header').each(function(){ $(this).next().after('<p class="size-g text-center desktop-hide semi">'+$(this).text()+'</p>'); });
 				$('.double :header#results').each(function(){ $(this).addClass('desktop-only').clone().removeClass('desktop-only strong').removeAttr('id').addClass('desktop-hide text-center semi mb-c').insertBefore($(this).parents('.double')); });
 				$('.heading-a > figure:last-child').prev().addClass('last');
 				html_tag.imagesLoaded(function(){
@@ -693,6 +718,19 @@ head.ready(function() {
 				$('figure a img').parents('a').addClass('img-zoom');
 				image_a.add(gallery_a).find('.img-zoom').removeClass('img-zoom');
 				gallery_a.each(function(){ if($(this).is('.e')){ $(this).parents('.cols-a').addClass('has-e'); }; });
+				
+				gallery_b.each(function(){
+					$(this).find('li[class] a').on('click',function(){
+						if($(this).parent().is('.a')){
+							$(this).parents('.gallery-b').removeClass('b-ac c-ac').addClass('a-ac');
+						} else if($(this).parent().is('.b')){
+							$(this).parents('.gallery-b').removeClass('a-ac c-ac').addClass('b-ac');
+						} else if($(this).parent().is('.c')){
+							$(this).parents('.gallery-b').removeClass('a-ac b-ac').addClass('c-ac');
+						};
+						return false
+					});	
+				});
 			}
 		},
 		ie : {
