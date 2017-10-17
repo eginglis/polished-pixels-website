@@ -492,7 +492,7 @@ html #root .about-placeholder { position: relative; left: 0; top: -135px; height
 .cols-a > header + .has-gallery-a > h1:first-child, .cols-a > header + .has-gallery-a > h2:first-child, .cols-a > header + .has-gallery-a > h3:first-child, .cols-a > header + .has-gallery-a > h4:first-child, .cols-a > header + .has-gallery-a > h5:first-child, .cols-a > header + .has-gallery-a > h6:first-child { margin-top: -32px; }
 	
 .gallery-b { position: relative; list-style: none; width: 100%; height: 519px; padding: 0; text-align: center; }
-	.gallery-b .title { display: block; position: relative; z-index: 2; width: 100%; max-width: 645px; height: 23px; margin: 0 auto; padding: 0; background: url(../images/safari.png) no-repeat; background-size: 100% 100%; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 5.615px; line-height: 21px; text-align: center; }
+	.gallery-b .title { display: block; position: absolute; left: -3000em; top: 0; z-index: 2; width: 100%; max-width: 645px; height: 23px; margin: 0 auto; padding: 0; background: url(../images/safari.png) no-repeat; background-size: 100% 100%; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 5.615px; line-height: 21px; text-align: center; }
 	.gallery-b img { display: block; position: relative; z-index: 1; margin: 0 auto; box-shadow: 0 0 60px rgba(0,0,0,.5); }
 	.gallery-b + .size-g { position: relative; z-index: 2; margin-top: 27px; }
 	.gallery-b li { display: block; position: absolute; bottom: 0; z-index: 1; width: 593px; margin: 0; padding: 0; opacity: .7; }
@@ -921,7 +921,7 @@ header { margin: 0 0 92px; }
 	.tip > .inner { display: block; position: absolute; left: -3000em; top: 0; cursor: default; }
 
 .user-a { overflow: hidden; position: relative; min-height: 177px; margin: 47px 0; padding: 22px 80px 2px 181px; background: #eaebec; color: #5d5d5d; line-height: 1.21875; }
-	.user-a figure, .list-comments figure { position: absolute; left: 27px; top: 27px; }
+	.user-a figure, .list-comments figure { position: absolute; left: 27px; top: 27px; width: 123px; }
 	.user-a h1, .user-a h2, .user-a h3, .user-a h4, .user-a h5, .user-a h6, .list-comments h1, .list-comments h2, .list-comments h3, .list-comments h4, .list-comments h5, .list-comments h6 { margin: 0 0 21px; color: #5d5d5d; font-size: 2.4em; }
 		.user-a h1 span, .user-a h2 span, .user-a h3 span, .user-a h4 span, .user-a h5 span, .user-a h6 span, .list-comments h1 span, .list-comments h span, .list-comments h3 span, .list-comments h4 span, .list-comments h5 span, .list-comments h6 span { display: block; margin: 0 0 -7px; color: #767676; font-size: 10px; font-weight: 400; }
 		.user-a h1 span a, .user-a h2 span a, .user-a h3 span a, .user-a h4 span a, .user-a h5 span a, .user-a h6 span a, .list-comments h1 span a, .list-comments h span a, .list-comments h3 span a, .list-comments h4 span a, .list-comments h5 span a, .list-comments h6 span a { color: #767676; font-weight: 400; text-decoration: none; }
@@ -1035,8 +1035,8 @@ a.email { word-break: break-all; word-wrap: break-word; }
 .link-a { font-size: 1.375em; }
 	.link-a a { display: inline-block; position: relative; min-width: 130px; padding: 8px 20px 9px; border: 2px solid #ff6000; background: #ff6000; color: #fff; font-weight: 400; line-height: 1.1; text-decoration: none; text-align: center; }
 		.link-a a:hover { border-color: #ff904d; background: #ff904d; }
-		.link-a a:focus, .link-a a:active { border-color: #ff6000; background: #ff8439; font-weight: 700; opacity: 1; }
-		.link-a a.width, #root a.width { padding-left: 0; padding-right: 0; }
+		.link-a a:focus, .link-a a:active { border-color: #ff6000; background: #ff8439; opacity: 1; }
+		.link-a a.width, #root a.width { padding-left: 5px; padding-right: 5px; }
 		.link-a a i { display: block; position: absolute; left: 0; top: 50%; width: 57px; margin: -13px 0 0; font-size: 23px; line-height: 24px; text-align: center; }
 	.link-a a.a { border-color: #3e5b81; background: none; color: #4d4d4d; }
 		.link-a a.a:hover, .link-a a.b:hover, .link-a a.d:hover { opacity: .7; }
@@ -2255,7 +2255,7 @@ html #root .about-placeholder { top: -125px; }
 	#root header + .gallery-a-wrapper { margin-top: -10px; }
 	.gallery-a.c li figure { height: 171px; }
 .gallery-b { height: 398px; }
-	.gallery-b .title { height: 15px; padding: 0; font-size: 4.33px; line-height: 15px; }
+	.gallery-b .title { position: relative; left: 0; top: 0; height: 15px; padding: 0; font-size: 4.33px; line-height: 15px; }
 	.gallery-b li.a, .gallery-b.b-ac li.b, .gallery-b.c-ac li.c { width: 498px; }
 	.gallery-b li.b, .gallery-b.b-ac li.c, .gallery-b.c-ac li.a, .gallery-b li.c, .gallery-b.b-ac li.a, .gallery-b.c-ac li.b { width: 458px; }
 .double.d .gallery-b { height: 398px; }
@@ -2698,6 +2698,7 @@ ul.cols, ol.cols, .module-b .list-b.cols, .cols.a { -moz-column-count: auto; -we
 .gallery-b { }
 	.gallery-b .title { background-size: cover; text-align: left; text-indent: -3000em; }
 	.gallery-b li.a, .gallery-b.b-ac li.b, .gallery-b.c-ac li.c, .double.d .gallery-b li.a, .double.d .gallery-b.b-ac li.b, .double.d .gallery-b.c-ac li.c { width: 89%; }
+	.double.d .gallery-b { height: auto; }
 	.gallery-b li.b, .gallery-b.b-ac li.c, .gallery-b.c-ac li.a, .gallery-b li.c, .gallery-b.b-ac li.a, .gallery-b.c-ac li.b, .double.d .gallery-b li, .double.d .gallery-b li.b, .double.d .gallery-b.b-ac li.c, .double.d .gallery-b.c-ac li.a, .double.d .gallery-b li.c, .double.d .gallery-b.b-ac li.a, .double.d .gallery-b.c-ac li.b { width: 83%; }
 .gallery-c { margin-top: 0; padding: 0 0 10px; }
 	.gallery-c li { float: none; width: auto; margin: 0 0 7px; padding: 0; }
@@ -2911,7 +2912,8 @@ ul.cols, ol.cols, .module-b .list-b.cols, .cols.a { -moz-column-count: auto; -we
 	.tabs-a > ul { margin-left: -10px; }
 		.tabs-a > ul li { border-left-width: 10px; }
 .user-a { margin-top: 25px; padding: 20px 20px 0; }
-	.user-a figure, .list-comments figure { position: relative; left: 0; top: 0; float: left; width: 70px; margin: 0 20px 5px 0; }
+	.user-a figure, .list-comments figure { position: relative; left: 0; top: 0; float: left; width: 70px; margin: 0 20px 5px 0; padding: 0; }
+		.user-a figure img, .list-comments figure img { display: block; margin: 0; padding: 0; border-width: 0; }
 	.user-a h1, .user-a h2, .user-a h3, .user-a h4, .user-a h5, .user-a h6, .list-comments h1, .list-comments h2, .list-comments h3, .list-comments h4, .list-comments h5, .list-comments h6 { margin-top: -6px; }
 
 .form-a { margin-bottom: 45px; padding-left: 22px; padding-right: 22px; }
