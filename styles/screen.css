@@ -1409,9 +1409,10 @@ figure { margin-bottom: 30px; }
 
 .img-zoom { display: inline-block; overflow: hidden; position: relative; max-width: 100%; text-decoration: none; }
 	.img-zoom img { display: block; position: relative; z-index: 1; }
-		.img-zoom:before, .img-zoom:after { display: block; position: absolute; left: 0; right: 0; color: #fff; font-weight: 400; font-size: 33px; font-family: i; line-height: 40px; text-align: center; text-indent: 0; }
+		.img-zoom:before, .img-zoom:after { display: block; visibility: hidden; position: absolute; left: 0; right: 0; color: #fff; font-weight: 400; font-size: 33px; font-family: i; line-height: 40px; text-align: center; text-indent: 0; opacity: 0; }
 			.img-zoom:before { content: "\e93a"; top: 50%; z-index: 3; width: 100%; margin: -20px 0 0; }
 			.img-zoom:after { content: ""; top: 0; bottom: 0; z-index: 2; background: rgba(255,255,255,.4); }
+			.img-zoom:hover:before, .img-zoom:hover:after { visibility: visible; opacity: 1; }
 
 .float-left { float: left; margin-right: 35px; }
 .float-right { float: right; margin-left: 35px; }
