@@ -2899,7 +2899,7 @@ ul.cols, ol.cols, .module-b .list-b.cols, .cols.a { -moz-column-count: auto; -we
 	.map figure { margin-left: -20px; margin-right: -20px; }
 .module-a.va { padding-top: 46px; }
 	#root .module-a > .fit.a { opacity: .25; }
-	#root .module-a > .prev a, #root .module-a > .next a { color: #fff; }
+	#root .module-a > .prev a, #root .module-a > .next a {  }
 .module-b.a { padding-bottom: 0; background: #eff4fa; }
 	#root .module-b.a > * { z-index: 6; float: none; width: auto; margin: 0 -20px; padding: 48px 20px 38px; border-radius: 0; background: #dfe8f1; }
 	#root .module-b.a > *:first-child { z-index: 7; margin: 0; padding: 54px 44px 34px; box-shadow: 0 0 46px rgba(203,203,203,.5); border-radius: 10px; background: #fff; }
