@@ -311,7 +311,7 @@ head.ready(function() {
 							};
 						}
 					});
-				   	google.maps.Marker(markerOpts);
+				   	new google.maps.Marker(markerOpts);
 				}
 			},
 			top : function(){
